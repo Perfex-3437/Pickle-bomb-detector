@@ -33,6 +33,7 @@ pip install -r requirements.txt
 # Run scanner
 python scanner.py --help
 python scanner.py --target https://github.com/example/repo
+```
 
 🔍 Features
 - Scans Python repositories for dangerous deserialization patterns
