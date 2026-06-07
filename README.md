@@ -20,6 +20,11 @@ See `/screenshots/` directory for vulnerability proofs.
 
 ---
 
+### Why This Matters
+`torch.load('model.pkl')` = arbitrary code execution if the .pkl is user-controlled.
+Most ML teams don't know this. Attackers do. I found 2 cases in production AI infra.
+This scanner finds the pattern before you get popped.
+
 ## 🚀 Quick Start
 
 ```bash
