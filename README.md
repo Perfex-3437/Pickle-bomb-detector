@@ -1,1 +1,35 @@
-# Pickle-bomb-detector
+# Pickle Bomb Detector
+
+**Finds Remote Code Execution (RCE) vulnerabilities in ML training infrastructure before attackers do.**
+
+## ✅ Proven Track Record
+
+- **2 RCEs Found & Patched** in production ML systems
+- Focus: Pickle deserialization vulnerabilities in AI/ML pipelines
+
+### Case Studies
+
+| Project | Vulnerability | Status |
+|---------|--------------|--------|
+| PerkunasAI Training Platform | Unsafe pickle in KV cache NVMe layer | ✅ Patched (Issue #93) |
+| TriAgent | `pickle.load` in `paging.py:137` | ✅ Fixed |
+
+### Screenshots
+
+See `/screenshots/` directory for vulnerability proofs.
+
+---
+
+## 🚀 Quick Start
+
+```bash
+# Clone and scan a target
+git clone https://github.com/Perfex-3437/pickle-bomb-detector.git
+cd pickle-bomb-detector
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run scanner
+python scanner.py --help
+python scanner.py --target https://github.com/example/repo
