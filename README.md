@@ -33,3 +33,15 @@ pip install -r requirements.txt
 # Run scanner
 python scanner.py --help
 python scanner.py --target https://github.com/example/repo
+
+🔍 Features
+- Scans Python repositories for dangerous deserialization patterns
+- Targets pickle, torch.load, joblib.load, yaml.load, eval(), exec()
+- Filters for high-value paths (model loading, inference, etc.)
+- Generates JSON reports with actionable findings
+📊 Output
+- raw_results.json - Full semgrep scan output
+- high_value_findings.json - Filtered, actionable vulnerabilities
+- scan_log.txt - Execution history
+🤝 Consulting
+Professional security audits available. See CONSULTING.md
