@@ -1,9 +1,6 @@
 
 ---
 
-## 📄 2. CASE_STUDIES.md
-
-```markdown
 # Case Studies: Pickle RCE Vulnerabilities
 
 ## Case Study 1: PerkunasAI Training Platform
@@ -21,7 +18,9 @@ The PerkunasAI training platform used pickle serialization for caching model wei
 ```python
 # In kv_cache/nvme_layer.py
 cache_data = nvme_read(offset, length)
-data = pickle.loads(cache_data)  # UNSAFE
+data = pickle.loads(cache_data)
+```
+  # UNSAFE
 
 Impact:
 - Remote code execution on training nodes
